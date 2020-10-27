@@ -3,9 +3,10 @@ from DAO import mostrarCarro
 import json
 import cgi
 
-data=cgi.FieldStorage()
 print('Content-Type: text/json')
 print('')
+
+data=cgi.FieldStorage()
 
 impcarros=mostrarCarro()
 print("[")
