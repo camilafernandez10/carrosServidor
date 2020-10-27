@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from servidor.DAO import mostrarCarro
+from DAO import mostrarCarro
 import cgi
 import json
 
