@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-from DAO import mostrarCarro
-import cgi
+from carrosServidor.DAO import mostrarCarro
 import json
+import cgi
 
 data=cgi.FieldStorage()
 print('Content-Type: text/json')
