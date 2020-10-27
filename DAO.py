@@ -7,8 +7,8 @@ def tomarConexión():
     try:
         connection = mysql.connector.connect(host='127.0.0.1',
                                              database='carros2',
-                                             user='camila',
-                                             password='Ma284651#')
+                                             user='miguel',
+                                             password='Rippe2611')
         if connection.is_connected():
             db_Info = connection.get_server_info()
             print("Connected to MySQL Server version ", db_Info)
