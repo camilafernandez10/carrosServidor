@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+import mysql.connector
+from mysql.connector import Error
 from DAO import mostrarCarro
 import json
 import cgi
