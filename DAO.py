@@ -1,6 +1,6 @@
 import mysql.connector
 from mysql.connector import Error
-from carrosServidor.Carro import Carro
+from Carro import Carro
 import json
 
 def tomarConexión():
