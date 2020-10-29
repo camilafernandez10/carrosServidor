@@ -1,6 +1,7 @@
 import mysql.connector
 from mysql.connector import Error
 from Carro import Carro
+from Carro import Marca
 import json
 
 def tomarConexión():
