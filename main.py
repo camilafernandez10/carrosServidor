@@ -23,7 +23,7 @@ for carro in impcarros:
 print("]")
 
 impmarcas=mostrarMarcas()
-print('{"tipo":"marca","arreglo":[')
+print("[")
 lon=len(impmarcas)
 i1=1
 for marca in impmarcas:
@@ -31,6 +31,7 @@ for marca in impmarcas:
     if  i1<lon:
         print(",")
         i1=i1+1
-print(']}')
+print("]")
+
 
 
