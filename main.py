@@ -2,6 +2,7 @@
 import mysql.connector
 from mysql.connector import Error
 from DAO import mostrarCarro
+from DAO import mostrarMarcas
 import json
 import cgi
 
