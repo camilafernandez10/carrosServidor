@@ -1,3 +1,4 @@
+
 #!/usr/bin/python3
 import mysql.connector
 from mysql.connector import Error
@@ -11,17 +12,13 @@ print('')
 
 data=cgi.FieldStorage()
 
-impcarros=mostrarCarro()
+impmarcas=mostrarMarcas()
 print("[")
-longitud=len(impcarros)
-i=1
-for carro in impcarros:
-    print(json.dumps(carro.__dict__))
-    if  i<longitud:
+lon=len(impmarcas)
+i1=1
+for marca in impmarcas:
+    print(json.dumps(marca.__dict__))
+    if  i1<lon:
         print(",")
-        i=i+1
+        i1=i1+1
 print("]")
-
-
-
-
