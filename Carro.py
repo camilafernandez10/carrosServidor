@@ -5,3 +5,9 @@ class Carro:
         self.logoCarro=logoCarro
         self.modelo=modelo
         self.precio=precio
+
+class Marca:
+    def __init__(self,id, nombreMarca,logoMarca):
+        self.id=id
+        self.nombreMarca=nombreMarca
+        self.logoMarca=logoMarca

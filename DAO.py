@@ -30,6 +30,14 @@ def mostrarCarro():
         carros.append(carro)
     return carros
 
+def mostrarMarcas():
+    cursor.execute('select * from marcas;')
+    marcas=[]
+    for datos in cursor:
+        marca=Marca(datos[0],datos[1],datos[2])
+        marcas.append(marca)
+    return marcas
+
 
 
 
