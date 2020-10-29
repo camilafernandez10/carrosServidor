@@ -25,11 +25,12 @@ print("]")
 impmarcas=mostrarMarcas()
 print('{"tipo":"marca","arreglo":[')
 lon=len(impmarcas)
+i1=1
 for marca in impmarcas:
     print(json.dumps(marca.__dict__))
-    if  i<lon:
+    if  i1<lon:
         print(",")
-        i=i+1
+        i1=i1+1
 print(']}')
 
 
