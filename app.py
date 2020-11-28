@@ -21,7 +21,7 @@ def ping_pong():
 @app.route('/caract', methods=['GET'])
 def all_caracteris():
     impcarac=mostrarCarac()
-    arreglo="["
+    arreglo += "["
     lon=len(impcarac)
     i1=1
     for marca in impcarac:
