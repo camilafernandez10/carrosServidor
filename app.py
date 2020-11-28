@@ -1,6 +1,9 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 from DAO import mostrarCarac
+import mysql.connector
+from mysql.connector import Error
+import json
 
 # configuration
 DEBUG = True
