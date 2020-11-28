@@ -11,3 +11,16 @@ class Marca:
         self.id=id
         self.nombreMarca=nombreMarca
         self.logoMarca=logoMarca
+
+class Caract:
+    def __init__(self,id, motor,color,cilindraje,potencia,fullequipo,traccion,frenos,seguridad):
+        self.id=id
+        self.motor=motor
+        self.color=color
+        self.cilindraje=cilindraje
+        self.potencia=potencia
+        self.fullequipo=fullequipo
+        self.traccion=traccion
+        self.frenos=frenos
+        self.seguridad=seguridad
+
