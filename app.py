@@ -27,7 +27,7 @@ def all_caracteris():
     for marca in impcarac:
         arreglo += json.dumps(marca.__dict__)
         if  i1<lon:
-           arreglo += ","
+            arreglo += ","
             i1=i1+1
     arreglo += "]"
 
