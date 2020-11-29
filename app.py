@@ -34,7 +34,7 @@ def all_caracteris():
             arreglo + ","
             i1=i1+1
     arreglo + "]"
-
+    print(arreglo)
     return jsonify({
         'status': 'success',
         'caract': arreglo
