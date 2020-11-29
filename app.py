@@ -25,15 +25,15 @@ def ping_pong():
 def all_caracteris():
     impcarac=mostrarCarac()
     arreglo = ""
-    arreglo + "["
+    arreglo += "["
     lon=len(impcarac)
     i1=1
     for marca in impcarac:
-        arreglo + json.dumps(marca.__dict__)
+        arreglo += json.dumps(marca.__dict__)
         if  i1<lon:
-            arreglo + ","
+            arreglo += ","
             i1=i1+1
-    arreglo + "]"
+    arreglo += "]"
     print(arreglo)
     return jsonify({
         'status': 'success',
