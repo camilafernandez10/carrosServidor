@@ -34,10 +34,10 @@ def all_caracteris():
             arreglo += ","
             i1=i1+1
     arreglo += "]"
-    print(arreglo)
+    obj = json.loads(arreglo)
     return jsonify({
         'status': 'success',
-        'caract': arreglo
+        'caract': obj
     })
 
 if __name__ == '__main__':
