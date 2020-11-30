@@ -46,7 +46,7 @@ def agregar_cita():
     if request.method == 'POST':
         datos = request.get_json()
         comentario = datos.get('coment')
-        response_object['message'] = 'Test drive agendado!'
+        response_object['message'] = comentario
     return jsonify(response_object)
 
 if __name__ == '__main__':
