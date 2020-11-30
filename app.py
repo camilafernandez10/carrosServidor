@@ -52,6 +52,8 @@ def agregar_cita():
         fecha = datos.get('fecha')
         comentario = datos.get('coment')
         rta = TestDrive(idCliente,idCarro,hora,fecha,comentario)
+        print(rta)
+        rta =str(rta)
         obj = json.loads(rta)
         print(rta)
         response_object['message'] = obj
