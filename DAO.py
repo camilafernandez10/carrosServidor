@@ -49,10 +49,12 @@ def mostrarCarac():
     return caract
 
 def TestDrive(idCliente,idCarro,hora,fecha,comentario):
-    cursor.execute('insert into test values("'+ idCliente + '","' + idCarro + '","'+ str(hora) + '","'+str(fecha)+'","' +str(comentario)+'");')
-    cnx.commit()
-    result = cursor.fetchone()
-    return result
+    try:
+        cursor.execute('insert into test values("'+ idCliente + '","' + idCarro + '","'+ str(hora) + '","'+str(fecha)+'","' +str(comentario)+'");')
+        cnx.commit()
+    except Error as e:
+        print("Error", e)
+        return e
 
    
 
