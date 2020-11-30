@@ -51,7 +51,10 @@ def agregar_cita():
         hora = datos.get('hora')
         fecha = datos.get('fecha')
         comentario = datos.get('coment')
-        response_object['message'] = TestDrive(idCliente,idCarro,hora,fecha,comentario)
+        rta = TestDrive(idCliente,idCarro,hora,fecha,comentario)
+        obj = json.loads(rta)
+        print(rta)
+        response_object['message'] = obj
     return jsonify(response_object)
 
 if __name__ == '__main__':
