@@ -48,6 +48,11 @@ def mostrarCarac():
         caract.append(carac)
     return caract
 
+def TestDrive(idCliente,idCarro,hora,fecha,comentario):
+    cursor.execute("insert into test values(" + idCliente + "," + idCarro + "," + str(hora) + "," +str(fecha)+"," +str(comentario)+");")
+
+   
+
 
 
 

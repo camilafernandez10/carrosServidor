@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 from DAO import mostrarCarac
+from DAO import TestDrive
 import mysql.connector
 from mysql.connector import Error
 import json
@@ -45,8 +46,13 @@ def agregar_cita():
     response_object = {'status': 'success'}
     if request.method == 'POST':
         datos = request.get_json()
+        idCliente = datos.get('idCliente')
+        idCarro = datos.get('idCarro')
+        hora = datos.get('hora')
+        fecha = datos.get('fecha')
         comentario = datos.get('coment')
-        response_object['message'] = comentario
+        TestDrive(idCliente,idCarro,hora,feha,comentario)
+        response_object['message'] = "Su test drive ha sido agendado"
     return jsonify(response_object)
 
 if __name__ == '__main__':
