@@ -52,6 +52,7 @@ def agregar_cita():
         fecha = datos.get('fecha')
         comentario = datos.get('coment')
         TestDrive(idCliente,idCarro,hora,fecha,comentario)
+        print(TestDrive(idCliente,idCarro,hora,fecha,comentario))
         response_object['message'] = "Su test drive ha sido agendado"
     return jsonify(response_object)
 
