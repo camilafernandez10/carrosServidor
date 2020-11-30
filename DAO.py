@@ -50,6 +50,7 @@ def mostrarCarac():
 
 def TestDrive(idCliente,idCarro,hora,fecha,comentario):
     cursor.execute('insert into test values("'+ idCliente + '","' + idCarro + '","'+ str(hora) + '","'+str(fecha)+'","' +str(comentario)+'");')
+    connection.commit()
 
    
 
