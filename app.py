@@ -40,5 +40,14 @@ def all_caracteris():
         'caract': obj
     })
 
+@app.route('/test', methods=['POST'])
+def agregar_cita():
+    response_object = {'status': 'success'}
+    if request.method == 'POST':
+        datos = request.get_json()
+        comentario = datos.get('coment')
+        response_object['message'] = 'Test drive agendado!'
+    return jsonify(response_object)
+
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
